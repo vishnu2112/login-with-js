@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Signup page</title>
+   <link rel = "stylesheet" href = "signupstyle.css">
+   <script>
+       function check(form){
+          
+           if( document.getElementById("text1").value == "vishnu"
+          && document.getElementById("text2").value == "amma123" )
+     
+       {
+      
+	window.open('login.html');
+        }
+      else {
+       alert("Error Password or Username");
+      }
+}
+      </script>
+    
+   
+
+</head>
+<body>
+<div class = "form">
+    <h3>Signup</h3>
+    <hr>
+
+    <form>
+      <p>Username</p>
+      <input type = "text" name = "username" placeholder = "username" id = "text1">
+      <p>Password</p>
+      <input type = "text" name = "password" placeholder = "password" id = "text2"><br>
+      <button onclick = check(form)>Submit</button>
+    </form>
+</div>
+
+     
+    
+   
+
+</body>
+</html>
